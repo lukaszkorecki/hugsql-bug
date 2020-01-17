@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+docker run \
+       --rm \
+       -it \
+       -e POSTGRES_USER=hug \
+       -e POSTGRES_PASSWORD=password \
+       -e POSTGRES_DB=hug \
+       -p 5444:5432 \
+       postgres:9.6
